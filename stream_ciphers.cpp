@@ -13,9 +13,7 @@
 //================================================================================================
 
 //Function declarations
-#ifndef MARMOSET_TESTING
 int main();
-#endif
 char *encode(char *plaintext, unsigned long key);
 char *decode( char *ciphertext, unsigned long key );
 void algorithm(char *input, char output[], unsigned long key, std::size_t capacity);
@@ -25,7 +23,6 @@ std::size_t find_size(char *arr);
 
 //================================================================================================
 
-#ifndef MARMOSET_TESTING
 int main() {
 	unsigned long key { 51323 };
 	char arr[] { "hello ECE 150 class" };
@@ -56,7 +53,6 @@ int main() {
 
 	return 0;
 }//main();
-#endif
 
 //================================================================================================
 
